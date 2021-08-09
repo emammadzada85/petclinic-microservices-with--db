@@ -1,8 +1,13 @@
 PATH="$PATH:/usr/local/bin"
 APP_NAME="petclinic"
 APP_REPO_NAME="clarusway-repo/petclinic-app-qa"
+<<<<<<< HEAD
 APP_STACK_NAME="Petclinic-Jenkins-Server-DT"
 CFN_KEYPAIR="my_instance01.key"
+=======
+APP_STACK_NAME="Call-petclinic-App-QA-1"
+CFN_KEYPAIR="natt-petclinic-qa.key"
+>>>>>>> feature/msp-21
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 AWS_REGION="us-east-1"
 ECR_REGISTRY="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
