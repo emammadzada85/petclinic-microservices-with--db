@@ -39,12 +39,21 @@ services:
   api-gateway:
     image: IMAGE_TAG_API_GATEWAY
     deploy:
+<<<<<<< HEAD
       replicas: 2
+=======
+      replicas: 1
+>>>>>>> feature/msp-22
     ports:
      - 8080:8080
     labels:
       kompose.image-pull-secret: "regcred"
+<<<<<<< HEAD
       kompose.service.expose: "petclinic04.clarusway.us"
+=======
+      kompose.service.expose: "petclinic07.clarusway.us"
+      kompose.service.type: "nodeport"
+>>>>>>> feature/msp-22
   tracing-server:
     image: openzipkin/zipkin
     environment:
